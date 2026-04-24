@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chic Luxe Handbags</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --black:#0b0b0c;
+      --gold:#c8a96a;
+      --cream:#f7f5f1;
+      --grey:#777;
+    }
+    *{box-sizing:border-box;}
+    body{margin:0;font-family:'Poppins',sans-serif;background:var(--cream);color:var(--black);}
+    header{background:var(--black);color:#fff;padding:20px 30px;display:flex;justify-content:space-between;align-items:center;}
+    header h1{font-family:'Playfair Display',serif;letter-spacing:1px;margin:0;font-size:22px;}
+    nav a{color:#fff;margin-left:20px;text-decoration:none;font-size:14px;position:relative;}
+    nav a::after{content:'';position:absolute;width:0;height:2px;background:var(--gold);left:0;bottom:-5px;transition:0.3s;}
+    nav a:hover::after{width:100%;}
+    .hero{height:80vh;background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://via.placeholder.com/1200x800');background-size:cover;background-position:center;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;padding:20px;}
+    .hero h2{font-family:'Playfair Display',serif;font-size:36px;margin-bottom:10px;}
+    .hero p{color:#ddd;}
+    .btn{display:inline-block;margin-top:15px;padding:12px 20px;border:1px solid var(--gold);color:#fff;text-decoration:none;transition:0.3s;}
+    .btn:hover{background:var(--gold);color:#000;}
+    .section-title{text-align:center;margin:50px 0 20px;font-family:'Playfair Display',serif;font-size:26px;}
+    .products{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:25px;padding:0 40px 60px;}
+    .product{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 5px 20px rgba(0,0,0,0.08);transition:0.3s;}
+    .product:hover{transform:translateY(-5px);}
+    .product img{width:100%;display:block;}
+    .product-content{padding:15px;}
+    .product h3{margin:5px 0;font-size:16px;}
+    .price{color:var(--gold);font-weight:500;}
+    .whatsapp{display:block;margin-top:10px;padding:10px;text-align:center;background:var(--black);color:#fff;text-decoration:none;border-radius:6px;font-size:13px;}
+    .whatsapp:hover{background:var(--gold);color:#000;}
+    .about{padding:50px 20px;text-align:center;max-width:700px;margin:auto;color:var(--grey);}
+    footer{background:var(--black);color:#aaa;text-align:center;padding:30px 20px;font-size:13px;}
+    @media(max-width:600px){.hero h2{font-size:26px;}header{flex-direction:column;gap:10px;}}
+  </style>
+</head>
+<body>
+<header>
+  <h1>Chic Luxe</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#shop">Shop</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div>
+    <h2>Luxury Handbags for Nairobi Queens</h2>
+    <p>Elevate your style with timeless elegance</p>
+    <a href="#shop" class="btn">Shop Now</a>
+  </div>
+</section>
+
+<h2 class="section-title" id="shop">New Arrivals</h2>
+
+<section class="products">
+  <div class="product">
+    <img src="https://via.placeholder.com/300" alt="Bag">
+    <div class="product-content">
+      <h3>Signature Luxe Bag</h3>
+      <p class="price">KSh 2,800</p>
+      <a href="https://wa.me/254748514105" class="whatsapp">Order on WhatsApp</a>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2 class="section-title">About Chic Luxe</h2>
+  <p>Chic Luxe is a Nairobi-inspired handbag brand designed for bold, stylish women who love elegance and class.</p>
+</section>
+
+<section class="about" id="contact">
+  <h2 class="section-title">Contact</h2>
+  <p>Phone: +254 748 514105</p>
+  <p>Email: chicluxe70@gmail.com</p>
+</section>
+
+<footer>
+  <p>© 2026 Chic Luxe Handbags. Nairobi, Kenya.</p>
+</footer>
+
+</body>
+</html>
